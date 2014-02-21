@@ -14,7 +14,7 @@ defined('_JEXEC') or die;
  *
  * @since  0.0.1
  */
-class HelloWorldTableHelloWorld extends JTable
+class HelloWorldTableHelloWorld extends JTableNested
 {
 	/**
 	 * Constructor
@@ -23,6 +23,6 @@ class HelloWorldTableHelloWorld extends JTable
 	 */
 	function __construct(&$db)
 	{
-		parent::__construct('#__helloworld', 'id', $db);
+		parent::__construct('#__helloworld_category', 'id', $db);
 	}
 }
